@@ -4,32 +4,52 @@
 
 // $(function() {
 //   //onload stuff
-//   navigator.notification.alert("PhoneGap is working");
 // });
 
 // Wait for PhoneGap to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
 
-// PhoneGap is ready
-//
+/**
+ * PhoneGap is ready
+ **/
 function onDeviceReady() {
-    // Empty
+  // Register event listeners
+  document.addEventListener("menubutton", onMenuKeyDown, false);
+  document.addEventListener("searchbutton", onSearchKeyDown, false);
 }
+
+/**
+ * Handle the menu button
+ **/
+function onMenuKeyDown() {
+  //TODO: pop up menu to edit app settings/switch views/etc.
+  showAlert('Menu');
+}
+
+// Handle the search button
+//
+function onSearchKeyDown() {
+  //TODO: pop up menu to edit app settings/switch views/etc.
+  showAlert('Search');
+}
+
+//
+//Demo functions
+//
 
 // alert dialog dismissed
 function alertDismissed() {
-    // do something
+    //no-op
 }
 
 // Show a custom alert
 //
-function showAlert() {
+function showAlert(msg) {
     navigator.notification.alert(
-        'You are the winner!',  // message
+        msg,  // message
         alertDismissed,         // callback
-        'Game Over',            // title
+        'Something happene',            // title
         'Done'                  // buttonName
     );
 }
-
