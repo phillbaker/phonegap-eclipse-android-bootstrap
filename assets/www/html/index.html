@@ -14,7 +14,7 @@
   <meta name="description" content="JetDesk | Mobile Desk Manager">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/bootstrap.css">
@@ -26,21 +26,27 @@
   <script src="../js/libs/modernizr-2.5.3.min.js"></script>
   <script src="../js/opt/phonegap-1.2.0.js"></script>
 </head>
-<body>
+<body class="container-fluid">
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
-		<h1>Hello World</h1>
+  <header id="title_bar" class="row-fluid">
+		<h1>JetDesk</h1>
   </header>
-  <div role="main">
-		<p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper consectetur metus, sed hendrerit justo pretium volutpat. Quisque dui leo, semper vitae fermentum ut, viverra ac enim. Aliquam eu neque neque. Pellentesque eget sapien purus, non convallis mauris. Morbi auctor rutrum auctor. Proin et nisi neque. Donec a placerat augue. Pellentesque gravida ligula non elit commodo ac blandit sapien mollis. Proin ut leo vel nisl rhoncus aliquet sit amet vel risus. Nullam suscipit, nulla et faucibus auctor, orci nisi varius urna, quis suscipit erat tortor quis tellus. Etiam non massa id dolor iaculis elementum quis quis est. Sed sed lectus leo, id mollis velit. In vel sapien metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate dapibus leo, vitae bibendum sapien blandit id.</p>
-		<p>Vestibulum tortor erat, iaculis eu hendrerit non, viverra eu metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse gravida dictum dui id porttitor. Fusce pretium varius lorem, ut consectetur arcu sodales a. Nulla eleifend pulvinar metus, at condimentum tellus vehicula sed. Proin leo elit, ullamcorper at feugiat ut, volutpat sit amet diam. Sed et mi sapien, vitae porttitor erat. Sed tempor urna nec massa adipiscing a pharetra nunc scelerisque. Sed aliquet nulla eu est luctus tempus.</p>
-		<p>Pellentesque dictum viverra arcu, id mattis quam facilisis vitae. Aenean nec quam nisi. Vivamus eget dolor in mi faucibus aliquet. Duis mauris magna, luctus quis ultrices vel, vulputate in ligula. Mauris facilisis ultrices mauris, eu gravida erat commodo vel. In bibendum dolor sed arcu condimentum at ullamcorper nisi lacinia. Sed et fermentum lorem. Aliquam erat volutpat. Nullam massa purus, euismod eu consectetur eu, luctus sed justo. Curabitur at augue tortor, eu rhoncus nunc. Duis tempor enim a turpis vestibulum non mattis leo hendrerit. Donec dictum, lacus et adipiscing eleifend, erat ante faucibus ipsum, et fermentum odio nisi quis tellus. Ut adipiscing placerat mattis. Nullam sapien massa, malesuada quis luctus sit amet, feugiat et orci. Nam convallis consectetur sollicitudin.</p>
+  <div role="main" class="row-fluid">
+		<div id="main" class="view">
+			<p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
+		</div>
+		<div id="settings" class="view">
+			<form id="settings_form">
+				<fieldset>
+				</fieldset>
+			</form>
+		</div>
   </div>
-  <footer>
 
+  <footer id="footer" class="row-fluid">
+		footer
   </footer>
 
 
