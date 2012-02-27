@@ -218,32 +218,6 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
-/*Set up Main Action Bar*/
-#title_bar {
-  /* need a position set to something for z-index to take effect */
-  position: relative;
-  z-index: 1;
-  background: #ccc;
-  background: -webkit-gradient(linear, 0 0, 0 70%, from(#fff), to(#ccc));
-  background: linear-gradient(#fff, #ccc 70%);
-  color: #444;
-  text-shadow: 0 1px 0 #fff;
-  border-bottom: 1px solid #999;
-  height: 44px;
-  line-height: 44px;
-  padding: 0;
-  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
-  box-shadow: 0 0 3px rgba(0,0,0,0.3);
-}
-
-/* App views */
-.view {
-  padding: 35px;
-  /* only one view is displayed at a time
-  so we'll set the views to default to be un-displayed
-  and then override this based on the element id */
-  display: none;
-}
 
 
 

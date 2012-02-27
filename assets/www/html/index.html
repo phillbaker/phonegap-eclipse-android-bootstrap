@@ -17,8 +17,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/bootstrap.css">
-  <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+  <!--<link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap-responsive.css">-->
+	<link rel="stylesheet" href="../css/jquery.mobile-1.0.1.css">
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.0.1.css">
 
   <!-- All JavaScript at the bottom, except this Modernizr build and the PhoneGap API.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
@@ -30,7 +32,7 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header id="title_bar" class="row-fluid">
+  <!--<header id="title_bar" class="row-fluid">
 		<h1>JetDesk</h1>
   </header>
   <div role="main" class="row-fluid">
@@ -47,14 +49,50 @@
 
   <footer id="footer" class="row-fluid">
 		footer
-  </footer>
+  </footer>-->
+	
+	
+	<!-- Start of first page -->
+	<div data-role="page" id="foo">
 
+		<div data-role="header" data-id="header" data-position="fixed">
+			<h1>Foo</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<p>I'm first in the source order so I'm shown as the page.</p>		
+			<p>View internal page called <a href="#bar">bar</a></p>	
+		</div><!-- /content -->
+
+		<div data-role="footer" data-id="footer" data-position="fixed">
+			<h4>Page Footer</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+
+	<!-- Start of second page -->
+	<div data-role="page" id="bar">
+
+		<div data-role="header" data-id="header" data-position="fixed">
+			<h1>Bar</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>		
+			<p><a href="#foo">Back to foo</a></p>	
+		</div><!-- /content -->
+
+		<div data-role="footer" data-id="footer" data-position="fixed">
+			<h4>Page Footer</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+	
+	
 
   <!-- JavaScript at the bottom for fast page loading -->
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
   <!--<script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.1.min.js"><\/script>')</script>-->
   <script src="../js/libs/jquery-1.7.1.js"></script>
+	<script src="../js/libs/jquery.mobile-1.0.1.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
   <script src="../js/bootstrap-2.0.1.js"></script>
