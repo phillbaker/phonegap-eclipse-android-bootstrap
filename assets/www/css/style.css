@@ -39,17 +39,17 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate
- * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #a8d1ff; color: #fff; text-shadow: none; }
+::selection { background: #a8d1ff; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
    Links
    ========================================================================== */
 
+/*TODO this messes with */
 a { color: #00e; }
 a:visited { color: #551a8b; }
 a:hover { color: #06e; }

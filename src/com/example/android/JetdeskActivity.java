@@ -1,9 +1,9 @@
-package com.phillbaker.jetdesk;
+package com.example.android;
 
 import android.os.Bundle;
 import com.phonegap.*;
 
-public class JetdeskActivity extends DroidGap {
+public class AppActivity extends DroidGap {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
